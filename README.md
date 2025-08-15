@@ -15,3 +15,24 @@
 - Add tests for user registration.
 - Implement login and authentication endpoints.
 - Secure API endpoints with authentication.
+
+
+## Day 3 – Recipe & Category Models
+- Created **Category** model with:
+  - `name`
+  - `slug`
+- Created **Recipe** model with:
+  - `title`
+  - `description`
+  - `ingredients` (TextField)
+  - `instructions`
+  - `category` (ForeignKey to Category)
+  - `prep_time`
+  - `cooking_time`
+  - `servings`
+  - `created_date`
+  - `image` (optional)
+  - `created_by` (ForeignKey to User)
+- Added migrations and migrated the database.
+
+**Commit:** `Add Recipe & Category models with migrations`
