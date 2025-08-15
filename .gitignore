@@ -1,0 +1,28 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+venv/
+env/
+
+# Environment variables
+.env
+
+# SQLite database 
+db.sqlite3
+
+# Media files 
+media/
+
+# Static files (collected for deployment)
+staticfiles/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/project settings
+.vscode/
+.idea/
