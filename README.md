@@ -43,3 +43,20 @@
   - Nested `category` name and `creator` username
   - Validation for required fields: `title`, `ingredients`, `instructions`
 - Commit: "Add serializers for Recipe & Category with validation"
+
+## Day 5 – Recipe & Category CRUD Views & URLs
+
+**Tasks Completed:**
+
+- Implemented **CRUD endpoints** using Django REST Framework ModelViewSet for:
+  - Recipe (list, create, retrieve, update, delete)
+  - Category (admin-level for create/update/delete, public for list)
+- Added **permissions**:
+  - Only recipe owners can edit or delete their recipes
+  - Anyone can view recipes and categories
+- Added **URLs** using DRF `DefaultRouter` for easy routing of endpoints
+
+**Endpoints Overview:**
+
+- `/api/recipes/` – List, create, retrieve, update, delete recipes
+- `/api/categories/` – List categories publicly, create/update/delete (admin only)
