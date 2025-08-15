@@ -36,3 +36,10 @@
 - Added migrations and migrated the database.
 
 **Commit:** `Add Recipe & Category models with migrations`
+
+## Day 4 – Serializers
+- Created `CategorySerializer`
+- Created `RecipeSerializer` with:
+  - Nested `category` name and `creator` username
+  - Validation for required fields: `title`, `ingredients`, `instructions`
+- Commit: "Add serializers for Recipe & Category with validation"
